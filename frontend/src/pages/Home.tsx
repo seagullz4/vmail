@@ -62,6 +62,7 @@ export function Home() {
   const [selectedDomain, setSelectedDomain] = useState<string>(
     config.emailDomain[0],
   ); // feat: 新增状态，用于存储当前选中的域名
+  const [customPrefix, setCustomPrefix] = useState<string>(""); // feat: 自定义邮箱前缀
   const [showEmailModal, setShowEmailModal] = useState(false); // feat: 新增状态，用于控制邮件详情模态框的显示
   const [showPromoModal, setShowPromoModal] = useState(() => {
     // 如果未启用推广，不弹出
@@ -226,8 +227,11 @@ export function Home() {
 
     try {
       await verifyTurnstile(requireTurnstile ? turnstileToken : undefined);
-      // feat: 使用选定的域名创建邮箱
-      const mailbox = `${randomName("", getRandomCharacter())}@${selectedDomain}`;
+      // feat: 使用自定义前缀或随机生成的名称创建邮箱
+      const prefix = customPrefix.trim()
+        ? customPrefix.trim().toLowerCase()
+        : randomName("", getRandomCharacter());
+      const mailbox = `${prefix}@${selectedDomain}`;
       // feat: 计算并存储过期时间戳 (当前时间 + 24小时)
       const now = Date.now();
       const expires = now + 24 * 60 * 60 * 1000;
@@ -568,6 +572,22 @@ export function Home() {
           </div>
         ) : (
           <div className="w-full md:max-w-[350px]">
+            {/* 自定义邮箱前缀输入 */}
+            <div className="mb-4">
+              <div className="mb-3 font-semibold">{t("Email prefix")}</div>
+              <div className="flex items-center gap-0">
+                <input
+                  type="text"
+                  value={customPrefix}
+                  onChange={(e) => setCustomPrefix(e.target.value.replace(/[^a-zA-Z0-9._-]/g, ''))}
+                  placeholder={t("Leave empty for random")}
+                  className="flex-1 min-w-0 p-2.5 rounded-l-md bg-white/10 text-white border border-cyan-50/20 border-r-0 placeholder:text-gray-500 focus:outline-none focus:border-cyan-500"
+                />
+                <span className="px-3 py-2.5 rounded-r-md bg-white/5 text-gray-400 border border-cyan-50/20 border-l-0 text-sm whitespace-nowrap">
+                  @{selectedDomain}
+                </span>
+              </div>
+            </div>
             {/* 邮箱域名后缀选择 */}
             <div className="mb-4">
               <div className="mb-3 font-semibold">{t("Domain")}</div>

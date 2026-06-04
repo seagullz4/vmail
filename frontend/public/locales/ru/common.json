@@ -11,6 +11,8 @@
   "Multi-domain configurable": "Настраиваемый мультидомен",
   "Domain": "Домен",
   "Email address": "Адрес электронной почты",
+  "Email prefix": "Префикс email",
+  "Leave empty for random": "Оставьте пустым для случайного",
   "Stop": "Стоп",
   "Validater": "Проверка",
   "Create temporary email": "Создать",

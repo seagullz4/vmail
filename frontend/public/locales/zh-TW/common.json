@@ -11,6 +11,8 @@
   "Multi-domain configurable": "多網域可配置",
   "Domain": "網域",
   "Email address": "電子郵件地址",
+  "Email prefix": "郵箱前綴",
+  "Leave empty for random": "留空則隨機生成",
   "Stop": "停止",
   "Validater": "驗證器",
   "Create temporary email": "建立",

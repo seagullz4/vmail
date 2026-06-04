@@ -11,6 +11,8 @@
   "Multi-domain configurable": "다중 도메인 구성 가능",
   "Domain": "도메인",
   "Email address": "이메일 주소",
+  "Email prefix": "이메일 접두사",
+  "Leave empty for random": "비우면 랜덤 생성",
   "Stop": "중지",
   "Validater": "유효성 검사기",
   "Create temporary email": "임시 이메일 생성",

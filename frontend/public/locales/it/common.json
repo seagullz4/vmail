@@ -11,6 +11,8 @@
   "Multi-domain configurable": "Multi-dominio configurabile",
   "Domain": "Dominio",
   "Email address": "Indirizzo email",
+  "Email prefix": "Prefisso email",
+  "Leave empty for random": "Lascia vuoto per casuale",
   "Stop": "Ferma",
   "Validater": "Validatore",
   "Create temporary email": "Crea email temporanea",

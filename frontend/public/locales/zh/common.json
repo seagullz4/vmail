@@ -10,6 +10,8 @@
   "Open RESTful API": "开放 RESTful API",
   "Multi-domain configurable": "多域名后缀可配置",
   "Email address": "电子邮件地址",
+  "Email prefix": "邮箱前缀",
+  "Leave empty for random": "留空则随机生成",
   "Stop": "停止",
   "Validater": "人机验证",
   "Create temporary email": "创建临时邮箱",

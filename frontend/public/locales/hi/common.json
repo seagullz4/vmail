@@ -11,6 +11,8 @@
   "Multi-domain configurable": "मल्टी-डोमेन कॉन्फ़िगर करने योग्य",
   "Domain": "डोमेन",
   "Email address": "ईमेल पता",
+  "Email prefix": "ईमेल उपसर्ग",
+  "Leave empty for random": "यादृच्छिक के लिए खाली छोड़ें",
   "Stop": "रोकें",
   "Validater": "मान्यकर्ता",
   "Create temporary email": "बनाएं",

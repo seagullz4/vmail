@@ -11,6 +11,8 @@
   "Multi-domain configurable": "Coklu alan adi yapilandirmasi",
   "Domain": "Alan Adi",
   "Email address": "E-Posta Adresi",
+  "Email prefix": "E-posta öneki",
+  "Leave empty for random": "Rastgele için boş bırakın",
   "Stop": "Durdur",
   "Validater": "Dogrulayici",
   "Create temporary email": "Olustur",

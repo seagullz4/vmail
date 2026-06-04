@@ -11,6 +11,8 @@
   "Multi-domain configurable": "マルチドメイン対応",
   "Domain": "ドメイン",
   "Email address": "メールアドレス",
+  "Email prefix": "メールプレフィックス",
+  "Leave empty for random": "空欄でランダム生成",
   "Stop": "停止",
   "Validater": "バリデータ",
   "Create temporary email": "一時メールを作成する",
