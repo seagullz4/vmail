@@ -29,7 +29,6 @@ import Close from "../components/icons/Close.tsx"; // 导入关闭图标
 
 // 图标导入
 import ShieldCheck from "../components/icons/ShieldCheck.tsx";
-import CodeBracketIcon from "../components/icons/CodeBracket.tsx";
 import ServerIcon from "../components/icons/ServerIcon.tsx";
 import ApiIcon from "../components/icons/ApiIcon.tsx";
 import GlobeAltIcon from "../components/icons/GlobeAltIcon.tsx";
@@ -527,14 +526,6 @@ export function Home() {
             </button>
           )}
           <div className="flex flex-col gap-4 text-sm text-gray-200">
-            <a
-              href="https://github.com/oiov/vmail"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center after:content-['↗'] gap-1.5 hover:text-cyan-400 transition-colors cursor-pointer">
-              <CodeBracketIcon className="size-5 text-blue-400" />{" "}
-              {t("Open Source")}
-            </a>
             <div className="flex items-center gap-1.5">
               <ServerIcon className="size-5 text-blue-400" />
               {t("Stable - 1M+ emails processed")}
