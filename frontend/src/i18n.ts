@@ -16,7 +16,7 @@ i18n
     // 调试模式，将在控制台输出 i18n 相关信息
     debug: false,
     // 如果检测到的语言不受支持，则回退到该语言
-    fallbackLng: "en",
+    fallbackLng: "zh",
     // fix: 显式指定要加载的命名空间为 'common'
     // 修复 i18next 默认请求 translation.json 的问题
     ns: ["common"],
